@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.component-wrapper {
+  margin-bottom: 16px;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: small;
+}

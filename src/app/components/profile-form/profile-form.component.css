@@ -1,0 +1,41 @@
+.pw-component {
+  width: 75%;
+  background: lightgray;
+  min-height: 15rem;
+  position: relative;
+  border-radius: 25px;
+
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
+}
+.pw-input {
+  border-radius: 25px;
+  width: 50%;
+  min-height: 2.5em;
+  display: inline-block;
+}
+.submit-btn {
+  position: relative;
+  display: inline;
+  float: right;
+}
+
+.welcome-img {
+  width: 100%;
+  height: 3rem;
+}
+
+.eye {
+  height: 5rem;
+  color: white;
+  position: absolute;
+  display: inline-block;
+  top: 93px;
+  right: -26px;
+}

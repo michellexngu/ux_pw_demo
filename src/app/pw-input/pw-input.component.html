@@ -1,0 +1,50 @@
+<div class="pw-component center">
+  <form action="" [formGroup]="passwordFormGroup">
+    <h3>Please create a new password</h3>
+    <img class="welcome-img" src="assets/welcome.svg">
+    <input [type]="showPassword ? 'text' : 'password'" name="password" class="pw-input center" placeholder="enter your password" pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*#?&^_-]).{8,}/" required minlength="8" />
+    <div class="submit-btn">
+      <p (click)="submit()">submit</p>
+    </div>
+    <p (click)="togglePasswordVisibility()">show/hide</p>
+  </form>
+</div>
+
+<label
+  class="text-danger"
+  *ngIf="passwordFormGroup.controls['password'].hasError('password')"
+>
+  Enter a valid password!
+</label>
+
+<!--<form class="example-form">-->
+<!--  <mat-form-field class="example-full-width">-->
+<!--    <input type="email" matInput [formControl]="pwFormControl" placeholder="Enter password" required minlength="8" pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*#?&^_-]).{8,}/">-->
+<!--    <mat-error class="error" *ngIf="(pwFormControl.hasError('pattern') || pwFormControl.hasError('minlength') )&& !pwFormControl.hasError('required')">-->
+<!--      Not valid    </mat-error>-->
+
+<!--    <mat-error *ngIf="pwFormControl.hasError('required')">Password does not meet the requirements</mat-error>-->
+<!--  </mat-form-field>-->
+<!--  <button (click)="submit()">submit</button>-->
+<!--</form>-->
+
+<!--<app-error-->
+<!--  *ngIf="passwordFormGroup.hasError('pattern')"-->
+<!--  [errorControl]="passwordFormGroup.get('password')"-->
+<!--  [showLargeError]="true"-->
+<!--&gt;</app-error>-->
+
+<!--<form [formGroup]="passwordForm" (submit)="submit()">-->
+<!--  <div>-->
+<!--    <label for="password1">Password:</label>-->
+<!--    <input type="password" id="password1" formControlName="password1"/>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <label for="password2">Confirm Password:</label>-->
+<!--    <input type="password" id="password2" formControlName="password2">-->
+<!--    <div class="error-message" *ngIf="passwordForm.errors?.['PasswordNoMatch']">-->
+<!--      Password doesn't match.-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <button type="submit" [disabled]="passwordForm.invalid"> </button>-->
+<!--    </form>-->
