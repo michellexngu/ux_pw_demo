@@ -22,9 +22,6 @@ export class ProfileFormComponent {
     ]),
   });
 
-  saveChanges() {
-    alert("Wrong password. Please try again.")
-  }
 
   public togglePasswordVisibility(): void {
     this.showPassword = !this.showPassword;
