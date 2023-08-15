@@ -20,7 +20,12 @@ export class ErrorService {
         return ERROR_MESSAGES['invalidDate']();
       case this.checkErrorType(errors, 'noNumeric'):
         return ERROR_MESSAGES['noNumeric']();
-
+      case this.checkErrorType(errors, 'noSpecialCharacter'):
+        return ERROR_MESSAGES['noSpecialCharacter']();
+      case this.checkErrorType(errors, 'noLowercase'):
+        return ERROR_MESSAGES['noLowercase']();
+      case this.checkErrorType(errors, 'noUppercase'):
+        return ERROR_MESSAGES['noUppercase']();
       case this.checkErrorType(errors, 'email'):
         return ERROR_MESSAGES['email']();
 
