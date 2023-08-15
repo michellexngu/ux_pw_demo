@@ -12,9 +12,6 @@ export class ProfileFormComponent {
   public showPassword: boolean = false;
 
   profileForm = new FormGroup({
-    // name: new FormControl('', [Validators.required, Validators.minLength(2)]),
-    // dateOfBirth: new FormControl('', [Validators.required, isValidDate()]),
-    // email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [
       Validators.required,
       Validators.minLength(8),

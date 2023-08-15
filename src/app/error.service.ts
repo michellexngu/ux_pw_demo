@@ -14,10 +14,6 @@ export class ErrorService {
     switch (true) {
       case this.checkErrorType(errors, 'required'):
         return ERROR_MESSAGES['required'](formControlName);
-      case this.checkErrorType(errors, 'invalidYear'):
-        return ERROR_MESSAGES['invalidYear']();
-      case this.checkErrorType(errors, 'invalidDate'):
-        return ERROR_MESSAGES['invalidDate']();
       case this.checkErrorType(errors, 'noNumeric'):
         return ERROR_MESSAGES['noNumeric']();
       case this.checkErrorType(errors, 'noSpecialCharacter'):
@@ -27,7 +23,6 @@ export class ErrorService {
       case this.checkErrorType(errors, 'noUppercase'):
         return ERROR_MESSAGES['noUppercase']();
       case this.checkErrorType(errors, 'email'):
-        return ERROR_MESSAGES['email']();
 
       case this.checkErrorType(errors, 'minlength'):
         const minRequirement = this.getErrorMessage(

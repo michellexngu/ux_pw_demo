@@ -1,5 +1,3 @@
-<!-- FINAL SETUP -->
-
 <div class="profile-page-container center">
   <form [formGroup]="profileForm" class="form-container">
     <div class="main-container">
@@ -7,7 +5,7 @@
         <h3>Please enter your password</h3>
         <img class="welcome-img" src="assets/welcome.svg">
       </div>
-      <!-- password -->
+      <!-- Password Component -->
       <app-form-field>
         <div class="input-container">
           <input
@@ -31,72 +29,6 @@
   </form>
 </div>
 
-<!-- INITIAL SETUP -->
-<!--
-<div class="profile-page-container">
-  <form [formGroup]="profileForm" class="form-container">
-    <div class="main-container">
-      <div class="header-container">
-        <h1>Join Us!</h1>
-      </div>
-
-      <div class="input-container">
-        <input formControlName="name" placeholder="Name" autocomplete="off" />
-        <div
-          *ngIf="
-            profileForm.get('name')?.invalid &&
-            (profileForm.get('name')?.dirty || profileForm.get('name')?.touched)
-          "
-        >
-        <span *ngIf="profileForm.get('name')?.hasError('required')">Name is required</span>
-        <span *ngIf="profileForm.get('name')?.hasError('minlength')">Name must at least be 2 characters</span>
-
-      </div>
-      </div>
-
-      <div class="input-container">
-        <input
-          formControlName="dateOfBirth"
-          type="date"
-          id="start"
-          name="trip-start"
-          min="2000-01-01"
-          max="2018-12-31"
-          class="styled-date-input"
-        />
-      </div>
-
-      <div class="input-container">
-        <select formControlName="country" name="country">
-          <option value="" disabled selected hidden>Select your country</option>
-          <option value="a">Country A</option>
-          <option value="b">Country B</option>
-          <option value="c">Country C</option>
-          <option value="d">Country D</option>
-        </select>
-      </div>
-
-      <div class="input-container">
-        <textarea
-          type="address"
-          formControlName="address"
-          placeholder="Address"
-          autocomplete="off"
-        ></textarea>
-      </div>
-
-      <div class="input-container">
-        <input
-          type="email"
-          formControlName="email"
-          placeholder="Email Address"
-          autocomplete="off"
-        />
-      </div>
-
-      <button (click)="saveChanges()">Save Changes</button>
-    </div>
-  </form>
-</div> -->
+<app-modal></app-modal>
 
 
