@@ -8,6 +8,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { ShowErrorDirective } from './show-error.directive';
 import { FormFieldComponent } from './components/form-field/form-field.component';
 import { ProfileFormComponent } from './components/profile-form/profile-form.component';
+import {ModalComponent} from "./components/profile-form/modal/modal.component";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProfileFormComponent } from './components/profile-form/profile-form.com
     ShowErrorDirective,
     FormFieldComponent,
     ProfileFormComponent,
+    ModalComponent,
   ],
     imports: [
         BrowserModule,

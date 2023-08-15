@@ -28,7 +28,7 @@
 
 .welcome-img {
   width: 100%;
-  height: 3rem;
+  height: 4rem;
 }
 
 .eye {
@@ -36,6 +36,6 @@
   color: white;
   position: absolute;
   display: inline-block;
-  top: 93px;
-  right: -26px;
+  top: 118px;
+  right: -83px;
 }

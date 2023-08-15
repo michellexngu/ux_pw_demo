@@ -2,7 +2,7 @@
   <form [formGroup]="profileForm" class="form-container">
     <div class="main-container">
       <div class="header-container">
-        <h3>Please enter your password</h3>
+        <h2>Please enter your password</h2>
         <img class="welcome-img" src="assets/welcome.svg">
       </div>
       <!-- Password Component -->
@@ -21,14 +21,12 @@
         </div>
       </app-form-field>
 
-      <button (click)="saveChanges()">submit</button>
-
+      <app-modal></app-modal>
     </div>
     <img class="eye" src="assets/eye.svg" (click)="togglePasswordVisibility()"/>
 
   </form>
 </div>
 
-<app-modal></app-modal>
 
 
