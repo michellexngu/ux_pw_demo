@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import {hasLowercase, hasNumeric, hasSpecialCharacter, hasUppercase, isValidDate} from '../../validators';
+import {hasLowercase, hasNumeric, hasSpecialCharacter, hasUppercase} from '../../validators';
 
 @Component({
   selector: 'app-profile-form',
@@ -16,6 +16,8 @@ export class ProfileFormComponent {
       Validators.required,
       Validators.minLength(8),
       hasNumeric(),
+      hasLowercase(),
+      hasUppercase(),
       hasSpecialCharacter(),
       hasLowercase(),
       hasUppercase()
