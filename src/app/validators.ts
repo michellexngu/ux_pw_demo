@@ -63,3 +63,15 @@ export function hasUppercase(): ValidatorFn {
     return null;
   }
 }
+
+export function isPwUsed(): ValidatorFn {
+  return (control: AbstractControl): ValidationErrors | null => {
+    const password = new String(control.value);
+    const isPwUsed = password.match(new RegExp("\bboiled\b"));
+
+    if (!isPwUsed) {
+      return {pwUsed: true};
+    }
+    return null;
+  }
+}

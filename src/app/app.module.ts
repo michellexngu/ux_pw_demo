@@ -9,6 +9,7 @@ import { ShowErrorDirective } from './show-error.directive';
 import { FormFieldComponent } from './components/form-field/form-field.component';
 import { ProfileFormComponent } from './components/profile-form/profile-form.component';
 import {ModalComponent} from "./components/profile-form/modal/modal.component";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {ModalComponent} from "./components/profile-form/modal/modal.component";
         BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
+        FontAwesomeModule,
 
     ],
   providers: [],

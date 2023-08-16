@@ -8,6 +8,7 @@ export type ErrorTypes =
   | 'noSpecialCharacter'
   | 'noLowercase'
   | 'noUppercase'
+  | 'pwUsed'
   ;
 
 export const ERROR_MESSAGES: { [key: string]: (...args: any) => string } = {
@@ -18,4 +19,5 @@ export const ERROR_MESSAGES: { [key: string]: (...args: any) => string } = {
   noSpecialCharacter: () =>  `Password should contain at least one special character.`,
   noLowercase: () =>  `Password should contain at least one lowercase character.`,
   noUppercase: () =>  `Password should contain at least one uppercase character.`,
+  pwUsed: () =>  `Password has already been used. Please choose another one`,
 };
