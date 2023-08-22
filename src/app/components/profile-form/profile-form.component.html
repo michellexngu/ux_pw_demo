@@ -25,7 +25,7 @@
     </div>
 <!--    <i class="fas fa-eye-slash" (click)="togglePasswordVisibility()"></i>-->
 <!--    <i class="fal fa-e" (click)="togglePasswordVisibility()"></i>-->
-    <img class="eye" src="assets/eye.svg" (click)="togglePasswordVisibility()"/>
+    <img class="eye" [src]="showPassword ? 'assets/icon_eyes_open.svg' : 'assets/icon_eyes_closed.svg'" (click)="togglePasswordVisibility()"/>
   </form>
 </div>
 

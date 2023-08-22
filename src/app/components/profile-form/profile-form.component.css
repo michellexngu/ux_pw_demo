@@ -32,10 +32,10 @@
 }
 
 .eye {
-  height: 5rem;
+  height: 7rem;
   color: white;
   position: absolute;
   display: inline-block;
-  top: 118px;
-  right: -83px;
+  top: 110px;
+  right: -140px;
 }
